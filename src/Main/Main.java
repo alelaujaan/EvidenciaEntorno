@@ -6,13 +6,12 @@ public class Main {
 		
 		CuentaBancaria cb = new CuentaBancaria();
 		try {
-			cb.agregarSaldo(8000);
-			cb.agregarSaldo(500);
+			cb.agregarSaldo(5000);
+			cb.agregarSaldo(200);
+			cb.agregarSaldo(300);
+			cb.retirarSaldo(1000);
 			cb.solicitarPrestamo(10000);
-			cb.retirarSaldo(1500);
-			cb.agregarSaldo(500);
-			cb.solicitarPrestamo(4000);
-			cb.obtenerPrestamo();//debe retornar 450
+			cb.obtenerPrestamo();
 		} catch (Exception e) {
 		}
 	}

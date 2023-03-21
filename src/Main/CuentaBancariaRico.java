@@ -10,8 +10,8 @@ class CuentaBancariaRico {
 	void test1() throws Exception {
 		CuentaBancaria test = new CuentaBancaria();
 		test.agregarSaldo(5000);
-		test.solicitarPrestamo(15000);
-		assertEquals(15000, test.obtenerPrestamo());
+		test.solicitarPrestamo(10000);
+		assertEquals(15000, test.obtenerSaldo());
 	}
 	
 	
