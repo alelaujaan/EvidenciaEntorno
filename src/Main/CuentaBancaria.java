@@ -51,6 +51,15 @@ public class CuentaBancaria {
 		return prestamo;
 	}
 
+	/**
+	 * 
+	 ** Esta funcion recibe una cantidad y si la cuenta cumple los requisitos añadirá el prestamo a la cuenta 
+	 ** @Author Rico
+	 ** @Version 6.6.6
+	 * 
+	 * 
+	 * 
+	 **/
 	public void solicitarPrestamo(double cantidad) throws Exception {
 		if (tienePrestamo || obtenerSaldo()==0) {
 			throw new Exception("No se le puede realizar un prestamo");
